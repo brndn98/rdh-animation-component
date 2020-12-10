@@ -1,5 +1,5 @@
-# rdh Componente reusable para animaciones v0.1
-###### Conjunto de métodos dinámicos y reusables para animaciones, accesibles a través de clases en html
+# rdh Componente reutilizable para animaciones v0.1
+###### Conjunto de métodos dinámicos y reutilizables para animaciones, accesibles a través de clases en html
 
 **Métodos disponibles**
 - Animación básica
@@ -19,11 +19,11 @@ Esta clase define a los elementos con animación y se ejecuta al cargar el sitio
 ## Animación en secuencia `rdh-sequence-animation`
 Esta clase define un bloque de elementos que se pretende animar a manera de secuencia, agregando un tiempo de espera a cada elemento. Los elementos a animar deben estar contenidos dentro de un elemento padre.
 
-**`rdh-squence-animation`** Elemento *padre*, define el bloque de animación en secuencia.
+**`rdh-sequence-animation`** Elemento *padre*, define el bloque de animación en secuencia.
 
 **`data-sequence-delay="n"`** Atributo del elemento *padre* que define el tiempo de espera entre los elementos hijos a animar. El valor de "`n`" representa el tiempo en segundos.
 
-**`rdh-squence-child`** Elemento *hijo*, define los elementos hijos a animar dentro de la secuencia.
+**`rdh-sequence-child`** Elemento *hijo*, define los elementos hijos a animar dentro de la secuencia.
 ```html
 <div class="rdh-sequence-animation" data-sequence-delay="0.5">
     <div class="rdh-sequence-child"></div>
