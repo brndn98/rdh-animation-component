@@ -8,7 +8,9 @@
 
 ## Animación básica `rdh-animation`
 Esta clase define a los elementos con animación y se ejecuta al cargar el sitio.
+
 **`rdh-animation`** Elemento con animación.
+
 **`data-animation-class="css-class"`** Atributo que guarda la clase con la animación a ejecutar. El valor de "`css-class`" representa una clase de css con la animación vinculada.
 ```html
 <div class="rdh-animation" data-animation-class="fade-in"></div>
@@ -16,8 +18,11 @@ Esta clase define a los elementos con animación y se ejecuta al cargar el sitio
 
 ## Animación en secuencia `rdh-sequence-animation`
 Esta clase define un bloque de elementos que se pretende animar a manera de secuencia, agregando un tiempo de espera a cada elemento. Los elementos a animar deben estar contenidos dentro de un elemento padre.
+
 **`rdh-squence-animation`** Elemento *padre*, define el bloque de animación en secuencia.
+
 **`data-sequence-delay="n"`** Atributo del elemento *padre* que define el tiempo de espera entre los elementos hijos a animar. El valor de "`n`" representa el tiempo en segundos.
+
 **`rdh-squence-child`** Elemento *hijo*, define los elementos hijos a animar dentro de la secuencia.
 ```html
 <div class="rdh-sequence-animation" data-sequence-delay="0.5">
@@ -28,8 +33,11 @@ Esta clase define un bloque de elementos que se pretende animar a manera de secu
 
 ## Animación en desplazamiento o scroll `rdh-scroll-animation`
 Esta clase define un bloque de elementos con animación y se ejecuta al estar visibles después de desplazar la ventana (scroll). Los elementos a animar deben estar contenidos dentro de un elemento padre.
+
 **`rdh-scroll-animation`** Elemento *padre*, define el bloque de elementos a animar.
+
 **`rdh-animate`** Elemento *hijo*, define los elementos hijos a animar al estar visibles después de desplazar la ventana.
+
 **`data-animation-class="css-class"`** Atributo que guarda la clase con la animación a ejecutar. El valor de "`css-class`" representa una clase de css con la animación vinculada.
 ```html
 <div class="rdh-scroll-animation">
@@ -58,8 +66,11 @@ Todos los métodos son dinámicos y pueden reutilizarse las veces que sean neces
 
 # Activar componentes
 Para poder hacer uso de las clases antes se tienen que inicializar los métodos, es necesario ejecutar los siguientes comandos.
+
 **`sequenceAnimationInitialize()`** Inicializa la funcionalidad para las aniamciones en secuencia.
+
 **`scrollAnimationInitialize()`** Inicializa la funcionalidad para las animaciones en scroll.
+
 **`basicAnimationInitialize()`** Inicializa la funcionalidad para los elementos animados. Este comando siempre debe ir al útlimo de los demás.
 ```javascript
 window.addEventListener("load", function() {
